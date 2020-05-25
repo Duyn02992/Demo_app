@@ -1,0 +1,4 @@
+<%= link_to gravatar_for(current_micropost, size: 50), current_micropost %>
+<h1><%= current_micropost.name %></h1>
+<span><%= link_to "view my profile", current_micropost %></span>
+<span><%= pluralize(current_micropost.comments.count, "comment") %></span>
